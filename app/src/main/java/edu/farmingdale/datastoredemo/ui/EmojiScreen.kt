@@ -87,7 +87,7 @@ private fun EmojiScreen(
                     Text(isDarkTheme.toString()) //for testing
                     IconButton(
                         onClick = {
-                            selectLayout(!isLinearLayout)
+                            selectLayout(!isLinearLayout)//change layout
                         }
                     ) {
                         Icon(
@@ -100,7 +100,7 @@ private fun EmojiScreen(
 
                         checked = isDarkTheme,
                         onCheckedChange = { isChecked ->
-                            selectTheme(!isChecked)
+                            selectTheme(!isChecked) //change theme
                         },
                         colors = SwitchDefaults.colors(
                             checkedThumbColor = MaterialTheme.colorScheme.primary,
@@ -196,8 +196,8 @@ fun EmojiReleaseGridLayout(
         ) { e ->
             Button(
                 onClick = {
-                    val emojiName = LocalEmojiData.EmojiNames[e] ?: "Unknown Emoji"
-                    Toast.makeText(context, "$emojiName", Toast.LENGTH_SHORT).show()
+                    val emojiName = LocalEmojiData.EmojiNames[e]
+                    Toast.makeText(context, "$emojiName", Toast.LENGTH_SHORT).show() //shows emoji names as a toast when clicked
                 },
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary

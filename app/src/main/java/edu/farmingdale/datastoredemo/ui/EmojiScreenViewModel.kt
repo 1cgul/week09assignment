@@ -41,7 +41,7 @@ class EmojiScreenViewModel(
             userPreferencesRepository.saveLayoutPreference(isLinearLayout)
         }
     }
-    fun selectTheme(isDarkTheme: Boolean) {
+    fun selectTheme(isDarkTheme: Boolean) { //select dark theme
         viewModelScope.launch {
             userPreferencesRepository.saveThemePreference(isDarkTheme)
         }
