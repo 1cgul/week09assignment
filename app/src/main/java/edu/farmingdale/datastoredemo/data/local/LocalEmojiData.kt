@@ -6,8 +6,19 @@ package edu.farmingdale.datastoredemo.data.local
  */
 
 object LocalEmojiData {
+    val EmojiList = listOf(
+        "😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "😊", "😇",
+        "🙂", "🙃", "😉", "😌", "😍", "🥰", "😘", "😗", "😙", "😚",
+        "😋", "😛", "😝", "😜", "🤪", "🤨", "🧐", "🤓", "😎", "🤩",
+        "🥳", "😏", "😒", "😞", "😔", "😟", "😕", "🙁", "☹️", "😣",
+        "😖", "😫", "😩", "🥺", "😢", "😭", "😤", "😠", "😡", "🤬",
+        "😈", "👿", "💀", "☠️", "💩", "🤡", "👹", "👺", "👻", "👽",
+        "👾", "🤖", "😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿",
+        "😾", "🙈", "🙉", "🙊", "💋", "💌", "💘", "💝", "💖", "💗",
+        "💓", "💞", "💕", "💟", "❣️", "👍", "👎", "✊", "👊", "✌️"
+    )
 
-    val EmojiNames = mapOf( //list of emoji along with their names
+    val EmojiNames = mapOf(//list of emoji along with their names
         "😀" to "Grinning Face", "😃" to "Grinning Face with Big Eyes", "😄" to "Grinning Face with Smiling Eyes",
         "😁" to "Beaming Face with Smiling Eyes", "😆" to "Grinning Squinting Face", "😅" to "Grinning Face with Sweat",
         "😂" to "Face with Tears of Joy", "🤣" to "Rolling on the Floor Laughing", "😊" to "Smiling Face with Smiling Eyes",
