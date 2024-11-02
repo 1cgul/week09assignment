@@ -41,6 +41,11 @@ class EmojiScreenViewModel(
             userPreferencesRepository.saveLayoutPreference(isLinearLayout)
         }
     }
+    fun selectTheme(isDarkTheme: Boolean) {
+        viewModelScope.launch {
+            userPreferencesRepository.saveThemePreference(isDarkTheme)
+        }
+    }
 
 
     companion object {
@@ -58,8 +63,12 @@ class EmojiScreenViewModel(
  */
 data class EmojiReleaseUiState(
     val isLinearLayout: Boolean = true,
+    val isDarkTheme: Boolean = false,
     val toggleContentDescription: Int =
         if (isLinearLayout) R.string.grid_layout_toggle else R.string.linear_layout_toggle,
     val toggleIcon: Int =
         if (isLinearLayout) R.drawable.ic_grid_layout else R.drawable.ic_linear_layout
+
 )
+
+
